@@ -1,8 +1,7 @@
-
+import { getInputArray } from "../Utils/InputProvider.ts";
 
 export async function DayOne() {
-    const text = Deno.readTextFile('./DayOne/DayOneInput.txt')
-    const totalTextList = (await text).split(/\n/)
+    const totalTextList = await getInputArray('./DayOne/DayOneInput.txt')
     let listOne = []
     let listTwo = []
     let constTotal = 0
