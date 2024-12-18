@@ -7,7 +7,7 @@ export async function DayThree() {
     const mulList = input.match(regex)!
     console.log(mulList.length)
 
-    let numberList = []
+    const numberList = []
     let isOff = false
     for (let i = 0; i < mulList.length; i++) {
         if (mulList[i] === "don't()") {
