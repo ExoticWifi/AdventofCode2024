@@ -1,7 +1,7 @@
 import { getInputArray } from "../Utils/InputProvider.ts";
 
 export async function DayOne() {
-    const totalTextList = await getInputArray('./DayOne/DayOneInput.txt')
+    const totalTextList = await getInputArray('./Day01/DayOneInput.txt')
     let listOne = []
     let listTwo = []
     let constTotal = 0

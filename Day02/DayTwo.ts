@@ -2,7 +2,7 @@ import { getInputArray } from "../Utils/InputProvider.ts";
 import { isSorted, isValidInterval } from "../Utils/NumberFormatter.ts";
 
 export async function DayTwo() {
-    const totalTextList = await getInputArray('./DayTwo/DayTwoInput.txt')
+    const totalTextList = await getInputArray('./Day02/DayTwoInput.txt')
     let count = 0
 
     for (let i = 0; i < totalTextList.length; i++) {
