@@ -5,7 +5,6 @@ export async function DayThree() {
     const filteredRegex = /mul\(([^)]*)\)/
     const input = await getWholeString('./Day03/DayThreeInput.txt')
     const mulList = input.match(regex)!
-    console.log(mulList.length)
 
     const numberList = []
     let isOff = false
