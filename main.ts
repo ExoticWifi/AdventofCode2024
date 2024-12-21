@@ -3,6 +3,7 @@ import { DayTwo } from "./Day02/DayTwo.ts";
 import { DayThree } from "./Day03/DayThree.ts";
 import { DayFour } from "./Day04/DayFour.ts";
 import { DayFive } from "./Day05/DayFive.ts";
+import { DaySix } from "./Day06/DaySix.ts";
 
 async function main() {
   await DayOne()
@@ -10,6 +11,7 @@ async function main() {
   await DayThree()
   await DayFour()
   await DayFive()
+  await DaySix()
 }
 
 if (import.meta.main) {
