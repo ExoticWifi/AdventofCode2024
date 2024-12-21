@@ -5,11 +5,10 @@ export async function DaySix() {
     const obstacleCoords: number[][] = []
     const emptySpots: number[][] = []
     const fileStream = file.readable.pipeThrough(new TextDecoderStream).pipeThrough(new TextLineStream)
-    let visitedCoords: number[][] = []
     let guardPosition: number[] = []
     let currentY = 0
     let currentX = 0
-    let totalSteps = 0
+
 
     for await (const line of fileStream) {
         const lineArray = line.split('')
@@ -27,7 +26,7 @@ export async function DaySix() {
         currentY++
     }
 
-    [visitedCoords, totalSteps] = runRoute(Array.from(guardPosition), obstacleCoords)
+    const [visitedCoords, _] = runRoute(Array.from(guardPosition), obstacleCoords)
 
     console.log(`Total steps: ${visitedCoords.length}`)
     
